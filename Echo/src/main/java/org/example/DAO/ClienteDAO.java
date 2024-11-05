@@ -55,7 +55,7 @@ public class ClienteDAO {
             cliente.setSenha(rs.getString("senha"));
             cliente.setEmail(rs.getString("email_cliente"));
             cliente.setIdade(rs.getInt("idade"));
-            cliente.setEndereco(rs.getString("endereco_cliente")); // Endereço como String
+            cliente.setEndereco(rs.getString("endereco_cliente"));
             cliente.setTelefone(rs.getInt("telefone_cliente"));
             cliente.setData_nascimento(rs.getDate("data_nascimento").toLocalDate());
             listaClientes.add(cliente);
